@@ -1,6 +1,6 @@
 {
     "name": "crist/bienes-raices-php_fin",
-    "description": "creando un proyecto con poo",
+    "description": "creando un proyecto con MVC",
     "type": "project",
     "autoload": {
         "psr-4": {

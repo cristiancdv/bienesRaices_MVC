@@ -15,7 +15,8 @@
             "email": "cristiancdv@gmail.com"
         }
     ],
-    "require": {
+    "require":  {
+        "require": "^7.0.0",
         "silex/silex": "^2.0.4",
         "monolog/monolog": "^1.22",
         "twig/twig": "^2.0",
@@ -27,6 +28,7 @@
     },
     "require-dev": {
         "heroku/heroku-buildpack-php": "*"
-      }
+    }
+    
     
 }

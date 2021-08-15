@@ -1,5 +1,5 @@
 {
-    "name": "crist/bienes-raices-php_fin",
+    "name": "crist/bienes-raices-mvc",
     "description": "creando un proyecto con MVC",
     "type": "project",
     "autoload": {

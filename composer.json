@@ -15,7 +15,7 @@
             "email": "cristiancdv@gmail.com"
         }
     ],
-    "require ^7.0.0": {
+    "require ^8.0.0": {
         "intervention/image": "^2.5",
         "phpmailer/phpmailer": "^6.5"
     }

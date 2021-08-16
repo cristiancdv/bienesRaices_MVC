@@ -1,2 +1,8 @@
 vendor/
+cypress/
+node_modules/
+src/
+
 .env
+cypress.json
+

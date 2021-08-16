@@ -4,7 +4,7 @@ namespace Controllers;
 
 use MVC\Router;
 use Model\Propiedad;
-
+use Model\Blog;
 use PHPMailer\PHPMailer\PHPMailer;
 
 class PaginasController

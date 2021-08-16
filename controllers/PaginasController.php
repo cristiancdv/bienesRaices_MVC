@@ -12,12 +12,12 @@ class PaginasController
     public static function index(Router $router)
     {
         $propiedades = Propiedad::get(3);
-
+        $blogs = Blog::get(2);
         $incio = true;
 
         $router->render('paginas/index', [
             'propiedades' => $propiedades,
-
+            'blogs' => $blogs,
             'inicio' => $incio
         ]);
     }

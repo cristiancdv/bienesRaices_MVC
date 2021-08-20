@@ -9,6 +9,9 @@ use Controllers\VendedoresController;
 use Controllers\PropiedadController;
 use Controllers\PaginasController;
 
+$routes = new Router(true);
+$route = $routes->getRoutes();
+
 
 $router = new Router();
 

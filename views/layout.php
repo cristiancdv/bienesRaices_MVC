@@ -15,7 +15,7 @@ if (!isset($inicio)) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienes Raices</title>
-    <link rel="stylesheet" href="/public/build/css/app.css">
+    <link rel="stylesheet" href="/build/css/app.css">
 </head>
 
 <body>
@@ -23,25 +23,25 @@ if (!isset($inicio)) {
     <header class="header <?php echo $inicio  ? 'inicio' : ''; ?>">
         <div class="contenedor contenido-header">
             <div class="barra">
-                <a href="/public">
-                    <img src="/public/build/img/logo.svg" alt="Logotipo de Bienes Raices">
+                <a href="/">
+                    <img src="/build/img/logo.svg" alt="Logotipo de Bienes Raices">
                 </a>
 
                 <div class="mobile-menu">
-                    <img src="/public/build/img/barras.svg" alt="icono menu responsive">
+                    <img src="/build/img/barras.svg" alt="icono menu responsive">
                 </div>
 
                 <div class="derecha">
-                    <img class="dark-mode-boton" src="/public/build/img/dark-mode.svg">
+                    <img class="dark-mode-boton" src="/build/img/dark-mode.svg">
                     <nav data-cy="navegacion-header" class="navegacion">
-                        <a href="/public/nosotros">Nosotros</a>
-                        <a href="/public/propiedades">Propiedades</a>
-                        <a href="/public/blogs">Blog</a>
-                        <a href="/public/contacto">Contacto</a>
+                        <a href="/nosotros">Nosotros</a>
+                        <a href="/propiedades">Propiedades</a>
+                        <a href="/blogs">Blog</a>
+                        <a href="/contacto">Contacto</a>
                         <?php if ($auth) : ?>
-                            <a href="/public/logout">Cerrar Sesión</a>
+                            <a href="/logout">Cerrar Sesión</a>
                         <?php else : ?>
-                            <a href="/public/login">Iniciar Sesión</a>
+                            <a href="/login">Iniciar Sesión</a>
                         <?php endif; ?>
                     </nav>
                 </div>
@@ -59,17 +59,17 @@ if (!isset($inicio)) {
     <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
             <nav data-cy="navegacion-footer" class="navegacion">
-                <a href="/public/nosotros">Nosotros</a>
-                <a href="/public/propiedades">Propiedades</a>
-                <a href="/public/blogs">Blog</a>
-                <a href="/public/contacto">Contacto</a>
+                <a href="/nosotros">Nosotros</a>
+                <a href="/propiedades">Propiedades</a>
+                <a href="/blogs">Blog</a>
+                <a href="/contacto">Contacto</a>
             </nav>
         </div>
 
         <p data-cy="copyright" class="copyright">Todos los derechos Reservados <?php echo date('Y'); ?> &copy;</p>
     </footer>
 
-    <script src="/public/build/js/bundle.min.js"></script>
+    <script src="/build/js/bundle.min.js"></script>
 </body>
 
 </html>

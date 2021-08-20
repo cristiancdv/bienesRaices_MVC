@@ -2,7 +2,7 @@
     <h1><?php echo $blog->titulo; ?></h1>
 
 
-    <img loading="lazy" src="/public/imagenes/<?php echo $blog->imagen; ?>" alt="imagen del blog">
+    <img loading="lazy" src="/imagenes/<?php echo $blog->imagen; ?>" alt="imagen del blog">
 
     <p class="informacion-meta">Escrito el: <span><?php echo $blog->creado; ?></span> por: <span><?php echo $blog->firma; ?></span> </p>
 

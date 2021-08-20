@@ -11,7 +11,7 @@
     <input type="file" id="imagen2" accept="image/jpeg, image/png" name="vendedor[imagen]">
 
     <?php if ($vendedor->imagen) { ?>
-        <img src="/public/imagenes/<?php echo $vendedor->imagen; ?>" class="imagen-small">
+        <img src="/imagenes/<?php echo $vendedor->imagen; ?>" class="imagen-small">
     <?php } ?>
 
 

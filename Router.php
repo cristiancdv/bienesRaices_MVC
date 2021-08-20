@@ -101,7 +101,8 @@ class Router
 
         //proteger las rutas
         if (in_array($urlActual, $rutas_protegidas) && !$auth) {
-            header('proteger rutas no funciona');
+            header('Location: /');
+            echo ('proteger rutas XD');
         }
 
         if ($fn) {

@@ -4,6 +4,7 @@ require_once __DIR__ . '/../includes/app.php';
 
 use MVC\Route;
 
-$rutaExterna = new Route;
+$routes = new Route(true);
+$route = $routes->getRoutes();
 
-debugear($rutaExterna);
+debugear($route);

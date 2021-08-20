@@ -2,9 +2,9 @@
 
 require_once __DIR__ . '/../includes/app.php';
 
-use MVC\Route;
+use MVC\Router;
 
-$routes = new Route(true);
+$routes = new Router(true);
 $route = $routes->getRoutes();
 
 debugear($route);

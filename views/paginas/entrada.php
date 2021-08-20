@@ -5,7 +5,7 @@
         </div>
 
         <div class="texto-entrada">
-            <a href="/blog?id=<?php echo $blog->id; ?>">
+            <a href="/public/blog?id=<?php echo $blog->id; ?>">
 
                 <h4><?php echo $blog->titulo; ?></h4>
                 <p>Escrito el: <span><?php echo $blog->creado; ?></span> por: <span><?php echo $blog->firma; ?></span> </p>

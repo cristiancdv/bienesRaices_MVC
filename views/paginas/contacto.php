@@ -21,7 +21,7 @@
 
     <h2 data-cy="heading-formulario">Llene el Formulario de Contacto</h2>
 
-    <form data-cy="formulario-contacto" class="formulario" action="/contacto" method="POST">
+    <form data-cy="formulario-contacto" class="formulario" action="/public/contacto" method="POST">
         <fieldset>
             <legend>Información Personal</legend>
 

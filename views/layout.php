@@ -23,7 +23,7 @@ if (!isset($inicio)) {
     <header class="header <?php echo $inicio  ? 'inicio' : ''; ?>">
         <div class="contenedor contenido-header">
             <div class="barra">
-                <a href="/">
+                <a href="/public">
                     <img src="/public/build/img/logo.svg" alt="Logotipo de Bienes Raices">
                 </a>
 
@@ -34,14 +34,14 @@ if (!isset($inicio)) {
                 <div class="derecha">
                     <img class="dark-mode-boton" src="/public/build/img/dark-mode.svg">
                     <nav data-cy="navegacion-header" class="navegacion">
-                        <a href="/nosotros">Nosotros</a>
-                        <a href="/propiedades">Propiedades</a>
-                        <a href="/blogs">Blog</a>
-                        <a href="/contacto">Contacto</a>
+                        <a href="/public/nosotros">Nosotros</a>
+                        <a href="/public/propiedades">Propiedades</a>
+                        <a href="/public/blogs">Blog</a>
+                        <a href="/public/contacto">Contacto</a>
                         <?php if ($auth) : ?>
-                            <a href="/logout">Cerrar Sesión</a>
+                            <a href="/public/logout">Cerrar Sesión</a>
                         <?php else : ?>
-                            <a href="/login">Iniciar Sesión</a>
+                            <a href="/public/login">Iniciar Sesión</a>
                         <?php endif; ?>
                     </nav>
                 </div>
@@ -59,10 +59,10 @@ if (!isset($inicio)) {
     <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
             <nav data-cy="navegacion-footer" class="navegacion">
-                <a href="/nosotros">Nosotros</a>
-                <a href="/propiedades">Propiedades</a>
-                <a href="/blogs">Blog</a>
-                <a href="/contacto">Contacto</a>
+                <a href="/public/nosotros">Nosotros</a>
+                <a href="/public/propiedades">Propiedades</a>
+                <a href="/public/blogs">Blog</a>
+                <a href="/public/contacto">Contacto</a>
             </nav>
         </div>
 

@@ -5,7 +5,7 @@
         <div data-cy="alerta-auth-error" class="alerta error"><?php echo $error; ?></div>
     <?php endforeach; ?>
 
-    <form method="POST" data-cy="formulario-auth" class="formulario" action="/login">
+    <form method="POST" data-cy="formulario-auth" class="formulario" action="/public/login">
         <fieldset>
             <legend>Email y Password</legend>
 

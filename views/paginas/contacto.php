@@ -14,9 +14,9 @@
 
 
     <picture>
-        <source srcset="build/img/destacada3.webp" type="image/webp">
-        <source srcset="build/img/destacada3.jpg" type="image/jpeg">
-        <img loading="lazy" src="build/img/destacada3.jpg" alt="Imagen Contacto">
+        <source srcset="/public/build/img/destacada3.webp" type="image/webp">
+        <source srcset="/public/build/img/destacada3.jpg" type="image/jpeg">
+        <img loading="lazy" src="/public/build/img/destacada3.jpg" alt="Imagen Contacto">
     </picture>
 
     <h2 data-cy="heading-formulario">Llene el Formulario de Contacto</h2>

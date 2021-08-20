@@ -1,7 +1,7 @@
 <?php foreach ($blogs as $blog) : ?>
     <article class="entrada-blog">
         <div class="imagen">
-            <img loading="lazy" src="/imagenes/<?php echo $blog->imagen; ?>" alt="Texto Entrada Blog">
+            <img loading="lazy" src="/public/imagenes/<?php echo $blog->imagen; ?>" alt="Texto Entrada Blog">
         </div>
 
         <div class="texto-entrada">

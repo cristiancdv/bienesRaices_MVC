@@ -2,7 +2,7 @@
     <?php foreach ($propiedades as $propiedad) : ?>
         <div class="anuncio" data-cy="anuncio">
 
-            <img loading="lazy" src="/imagenes/<?php echo $propiedad->imagen; ?>" alt="anuncio">
+            <img loading="lazy" src="/public/imagenes/<?php echo $propiedad->imagen; ?>" alt="anuncio">
 
             <div class="contenido-anuncio">
                 <h3><?php echo $propiedad->titulo; ?></h3>
@@ -11,15 +11,15 @@
 
                 <ul class="iconos-caracteristicas">
                     <li>
-                        <img class="icono" loading="lazy" src="build/img/icono_wc.svg" alt="icono wc">
+                        <img class="icono" loading="lazy" src="/public/build/img/icono_wc.svg" alt="icono wc">
                         <p><?php echo $propiedad->wc; ?></p>
                     </li>
                     <li>
-                        <img class="icono" loading="lazy" src="build/img/icono_estacionamiento.svg" alt="icono estacionamiento">
+                        <img class="icono" loading="lazy" src="/public/build/img/icono_estacionamiento.svg" alt="icono estacionamiento">
                         <p><?php echo $propiedad->estacionamiento; ?></p>
                     </li>
                     <li>
-                        <img class="icono" loading="lazy" src="build/img/icono_dormitorio.svg" alt="icono habitaciones">
+                        <img class="icono" loading="lazy" src="/public/build/img/icono_dormitorio.svg" alt="icono habitaciones">
                         <p><?php echo $propiedad->habitaciones; ?></p>
                     </li>
                 </ul>

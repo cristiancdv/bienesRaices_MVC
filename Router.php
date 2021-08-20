@@ -42,7 +42,7 @@ class Router
         return $this->uri;
     }
 
-    private function getParams()
+    public function getParams()
     {
         if (strstr($this->uri, '?')) {
             $params = explode("?", $this->uri);
@@ -59,13 +59,13 @@ class Router
     public $rutasGET = [];
     public $rutasPOST = [];
 
-    public function get($routes, $fn)
+    public function get($url, $fn)
     {
-        $this->rutasGET[$routes] = $fn;
+        $this->rutasGET[$url] = $fn;
     }
-    public function post($routes, $fn)
+    public function post($url, $fn)
     {
-        $this->rutasPOST[$routes] = $fn;
+        $this->rutasPOST[$url] = $fn;
     }
 
 

@@ -9,9 +9,7 @@ use Controllers\VendedoresController;
 use Controllers\PropiedadController;
 use Controllers\PaginasController;
 
-$routes = new Router(true);
-$rutaExterna = $routes->getRoutes();
-$subDominioExterno = $rutaExterna[1];
+
 
 
 $router = new Router();

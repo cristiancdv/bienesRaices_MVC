@@ -76,7 +76,7 @@ function validaRedirecciona(string $url)
 }
 function inyectarUrlExterna()
 {
-    $url = $_SERVER['REQUEST_URI'];
+    $url = $_SERVER["REDIRECT_URL"];
     if (strstr($url, '?')) {
         $url = substr($url, 0, strpos($url, '?'));
     }

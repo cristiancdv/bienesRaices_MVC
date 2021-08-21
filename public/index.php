@@ -10,7 +10,6 @@ use Controllers\PropiedadController;
 use Controllers\PaginasController;
 
 
-debugear($_SERVER);
 
 $router = new Router();
 

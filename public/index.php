@@ -12,7 +12,7 @@ use Controllers\PaginasController;
 $routes = new Router(true);
 $rutaExterna = $routes->getRoutes();
 $subDominioExterno = $rutaExterna[1];
-inyactarRutaExterna($subDominioExterno);
+
 
 $router = new Router();
 

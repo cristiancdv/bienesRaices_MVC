@@ -74,3 +74,9 @@ function validaRedirecciona(string $url)
     }
     return $id;
 }
+function inyectarUrlExterna()
+{ //IMPORTANTE AL CORRER EN LOCAL CAMBIAR A PATH_INFO
+    $url = $_SERVER['REDIRECT_URL'] ?? '/';
+
+    return $url;
+}

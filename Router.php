@@ -67,6 +67,7 @@ class Router
     }
 
 
+
     public function comprobarRutas()
     {
         session_start();
@@ -86,7 +87,7 @@ class Router
                 '/vendedores/eliminar'
             ];
 
-        $urlActual = $_SERVER['PATH_INFO'] ?? '/';
+        $urlActual = '/' . inyectarRutaExterna();
         $metodo = $_SERVER['REQUEST_METHOD'];
 
         if ($metodo === 'GET') {

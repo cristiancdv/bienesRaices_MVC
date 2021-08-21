@@ -1,5 +1,7 @@
 <?php
 
+use MVC\Router;
+
 define('TEMPLATES_URL', __DIR__ . '/templates');
 define('FUNCIONES_URL', __DIR__ . 'funciones.php');
 define('CARPETA_IMAGENES', $_SERVER['DOCUMENT_ROOT'] . '/imagenes/');
@@ -71,4 +73,11 @@ function validaRedirecciona(string $url)
         header("Location: ${url}");
     }
     return $id;
+}
+function inyectarRutaExterna()
+{
+    $route = new Router();
+    $rutaExterna = $route->getRoutes();
+    $subDominioExterno = $rutaExterna[1];
+    return $subDominioExterno;
 }

@@ -40,7 +40,8 @@ class Router
                 '/vendedores/eliminar'
             ];
 
-        $urlActual = inyectarUrlExterna();
+        //IMPORTANTE AL CORRER EN LOCAL CAMBIAR A PATH_INFO
+        $urlActual = $_SERVER['REDIRECT_URL'] ?? '/';
         $metodo = $_SERVER['REQUEST_METHOD'];
 
         if ($metodo === 'GET') {

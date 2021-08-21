@@ -54,8 +54,6 @@ class Router
         }
     }
 
-
-
     public $rutasGET = [];
     public $rutasPOST = [];
 
@@ -67,8 +65,6 @@ class Router
     {
         $this->rutasPOST[$url] = $fn;
     }
-
-
 
 
     public function comprobarRutas()
@@ -102,7 +98,7 @@ class Router
         //proteger las rutas
         if (in_array($urlActual, $rutas_protegidas) && !$auth) {
             header('Location: /');
-            echo ('proteger rutas XD');
+            // echo ('proteger rutas XD');
         }
 
         if ($fn) {

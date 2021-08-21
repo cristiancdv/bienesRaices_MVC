@@ -10,9 +10,9 @@ use Controllers\PropiedadController;
 use Controllers\PaginasController;
 
 $routes = new Router(true);
-$route = $routes->getRoutes();
-
-
+$rutaExterna = $routes->getRoutes();
+$subDominioExterno = $rutaExterna[1];
+inyactarRutaExterna($subDominioExterno);
 
 $router = new Router();
 

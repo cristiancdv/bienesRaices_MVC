@@ -72,3 +72,7 @@ function validaRedirecciona(string $url)
     }
     return $id;
 }
+function inyactarRutaExterna($urlexterna)
+{
+    header("Location: ${urlexterna}");
+}

@@ -1,6 +1,6 @@
 <?php
 
-use MVC\Router;
+
 
 define('TEMPLATES_URL', __DIR__ . '/templates');
 define('FUNCIONES_URL', __DIR__ . 'funciones.php');
@@ -74,10 +74,11 @@ function validaRedirecciona(string $url)
     }
     return $id;
 }
-function inyectarRutaExterna()
+function inyectarUrlExterna()
 {
-    $route = new Router();
-    $rutaExterna = $route->getRoutes();
-    $subDominioExterno = $rutaExterna[1];
-    return $subDominioExterno;
+    $url = $_SERVER['REQUEST_URI'];
+    if (strstr($url, '?')) {
+        $url = substr($url, 0, strpos($url, '?'));
+    }
+    return $url;
 }

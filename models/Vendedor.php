@@ -44,7 +44,7 @@ class Vendedor extends ActiveRecord
         }
 
         if (!preg_match('/[0-9]{10}/', $this->telefono)) {
-            self::$errores[] = 'Formato no valido';
+            self::$errores[] = 'Formato de telefono no valido';
         }
 
         if (!$this->imagen) {

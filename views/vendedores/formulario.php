@@ -15,7 +15,7 @@
     <?php } ?>
 
 
-    <label for="telefono">Telefono:</label>
+    <label for="telefono">Telefono:(10 Digitos sin guiones)</label>
     <input type="number" id="telefono" name="vendedor[telefono]" placeholder="Telefono" value="<?php echo s($vendedor->telefono); ?>">
 
 </fieldset>

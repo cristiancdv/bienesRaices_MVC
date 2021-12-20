@@ -76,7 +76,7 @@ function validaRedirecciona(string $url)
 }
 function inyectarUrlExterna()
 { //IMPORTANTE AL CORRER EN CLOUD O UNA VM CAMBIAR DE PATH_INFO A REDIRECT_URL
-    $url = $_SERVER['PATH_INFO'] ?? '/';
+    $url = $_SERVER['REQUEST_URI'] ?? '/';
 
     return $url;
 }

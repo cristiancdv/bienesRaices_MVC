@@ -28,7 +28,7 @@ $router->get('/vendedores/actualizar', [VendedoresController::class, 'actualizar
 $router->post('/vendedores/actualizar', [VendedoresController::class, 'actualizar']);
 $router->post('/vendedores/eliminar', [VendedoresController::class, 'eliminar']);
 
-var_dump($_SERVER);
+debugear($_SERVER);
 //rutas publicas
 $router->get('/', [PaginasController::class, 'index']);
 $router->get('/nosotros', [PaginasController::class, 'nosotros']);

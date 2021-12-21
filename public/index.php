@@ -48,4 +48,3 @@ $router->get('/logout', [LoginController::class, 'logout']);
 
 
 $router->comprobarRutas();
-debugear($_SERVER);

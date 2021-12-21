@@ -28,7 +28,7 @@ $router->get('/vendedores/actualizar', [VendedoresController::class, 'actualizar
 $router->post('/vendedores/actualizar', [VendedoresController::class, 'actualizar']);
 $router->post('/vendedores/eliminar', [VendedoresController::class, 'eliminar']);
 
-debugear($_SERVER['PATH']);
+
 //rutas publicas
 $router->get('/', [PaginasController::class, 'index']);
 $router->get('/nosotros', [PaginasController::class, 'nosotros']);
@@ -48,3 +48,4 @@ $router->get('/logout', [LoginController::class, 'logout']);
 
 
 $router->comprobarRutas();
+debugear($_SERVER);

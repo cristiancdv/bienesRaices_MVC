@@ -76,13 +76,13 @@ function validaRedirecciona(string $url)
 }
 function inyectarUrlExterna()
 { //IMPORTANTE AL CORRER EN CLOUD O UNA VM CAMBIAR DE PATH_INFO A REDIRECT_URL
-    if ($_SERVER['PATH_INFO']) {
-        $url = $_SERVER['PATH_INFO'];
+    if ($_SERVER['SCRIPT_NAME']) {
+        $url = $_SERVER['SCRIPT_NAME'];
     } else {
         $url = $_SERVER['REQUEST_URI'];
     }
 
-    debugear($_SERVER);
+
 
     return $url;
 }

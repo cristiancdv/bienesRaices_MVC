@@ -82,7 +82,7 @@ function inyectarUrlExterna()
         $url = $_SERVER['REQUEST_URI'];
     }
 
-
+    debugear($_SERVER);
 
     return $url;
 }
